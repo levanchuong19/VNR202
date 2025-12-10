@@ -71,7 +71,7 @@ export function Navbar() {
               <motion.a
                 key={item.label}
                 onClick={() => handleNavClick(item.href)}
-                className="text-(--color-text-muted) hover:text-(--color-accent) transition-colors cursor-pointer underline-animated relative"
+                className="text-(--color-text-muted) hover:text-(--color-accent) transition-colors cursor-pointer underline-animated relative hover-text-white"
                 initial={{ opacity: 0, y: -10 }}
                 animate={{ opacity: 1, y: 0 }}
                 transition={{
