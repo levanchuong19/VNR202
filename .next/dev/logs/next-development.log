@@ -1,16 +1,24 @@
-[00:00:00.831] Server  LOG      ✓ Ready in 546ms
-[00:00:25.294] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
-[00:00:25.533] Browser LOG     %c[Vercel Web Analytics]%c Debug mode is enabled by default in development. No requests will be sent to the server. color: rgb(120, 120, 120) color: inherit
-[00:00:25.533] Browser LOG     %c[Vercel Web Analytics]%c Running queued event color: rgb(120, 120, 120) color: inherit pageview {"path":"/","route":"/"}
-[00:00:25.533] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/ color: rgb(120, 120, 120) color: inherit {"dp":"/","o":"http://localhost:3000/","sdkn":"@vercel/analytics/next","sdkv":"1.6.1","sv":"0.1.3","ts":1765373558656}
-[00:00:35.561] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
-[00:00:35.782] Browser LOG     %c[Vercel Web Analytics]%c Debug mode is enabled by default in development. No requests will be sent to the server. color: rgb(120, 120, 120) color: inherit
-[00:00:35.782] Browser LOG     %c[Vercel Web Analytics]%c Running queued event color: rgb(120, 120, 120) color: inherit pageview {"path":"/","route":"/"}
-[00:00:35.782] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/ color: rgb(120, 120, 120) color: inherit {"dp":"/","o":"http://localhost:3000/","sdkn":"@vercel/analytics/next","sdkv":"1.6.1","sv":"0.1.3","ts":1765373568909}
-[00:01:16.904] Server  LOG      ✓ Compiled in 79ms
-[00:01:39.971] Server  LOG      ✓ Compiled in 63ms
-[00:02:06.487] Server  LOG      ✓ Compiled in 61ms
-[00:04:38.198] Server  LOG      ✓ Compiled in 160ms
-[00:05:44.661] Server  LOG      ✓ Compiled in 60ms
-[00:06:08.205] Server  LOG      ✓ Compiled in 52ms
-[00:08:09.995] Server  LOG      ✓ Compiled in 114ms
+[00:00:00.981] Server  LOG      ✓ Ready in 680ms
+[00:00:08.154] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:00:08.391] Browser LOG     %c[Vercel Web Analytics]%c Debug mode is enabled by default in development. No requests will be sent to the server. color: rgb(120, 120, 120) color: inherit
+[00:00:08.391] Browser LOG     %c[Vercel Web Analytics]%c Running queued event color: rgb(120, 120, 120) color: inherit pageview {"path":"/","route":"/"}
+[00:00:08.391] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3001/ color: rgb(120, 120, 120) color: inherit {"dp":"/","o":"http://localhost:3001/","r":"","sdkn":"@vercel/analytics/next","sdkv":"1.6.1","sv":"0.1.3","ts":1765377412422}
+[00:01:24.051] Server  LOG      ✓ Compiled in 132ms
+[00:02:21.712] Server  LOG      ✓ Compiled in 70ms
+[00:02:32.214] Server  LOG      ✓ Compiled in 55ms
+[00:03:11.416] Server  LOG      ✓ Compiled in 57ms
+[00:03:17.148] Server  LOG      ✓ Compiled in 60ms
+[00:07:47.853] Server  LOG      ✓ Compiled in 215ms
+[00:07:56.475] Server  LOG      ✓ Compiled in 79ms
+[00:09:28.166] Server  LOG      ✓ Compiled in 123ms
+[00:09:34.835] Server  LOG      ✓ Compiled in 61ms
+[00:11:00.025] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:11:00.233] Browser LOG     %c[Vercel Web Analytics]%c Debug mode is enabled by default in development. No requests will be sent to the server. color: rgb(120, 120, 120) color: inherit
+[00:11:00.233] Browser LOG     %c[Vercel Web Analytics]%c Running queued event color: rgb(120, 120, 120) color: inherit pageview {"path":"/","route":"/"}
+[00:11:00.233] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3001/ color: rgb(120, 120, 120) color: inherit {"dp":"/","o":"http://localhost:3001/","r":"","sdkn":"@vercel/analytics/next","sdkv":"1.6.1","sv":"0.1.3","ts":1765378064263}
+[00:12:26.480] Server  LOG      ✓ Compiled in 201ms
+[00:14:34.610] Server  LOG      ✓ Compiled in 101ms
+[00:14:38.351] Server  LOG      ✓ Compiled in 76ms
+[00:14:39.364] Server  LOG      ✓ Compiled in 64ms
+[00:15:14.254] Server  LOG      ✓ Compiled in 92ms
+[00:16:51.881] Server  LOG      ✓ Compiled in 228ms

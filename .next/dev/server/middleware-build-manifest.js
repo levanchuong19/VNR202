@@ -4,20 +4,20 @@ globalThis.__BUILD_MANIFEST = {
   },
   "devFiles": [],
   "polyfillFiles": [
-    "static/chunks/219e5_next_dist_build_polyfills_polyfill-nomodule.js"
+    "static/chunks/9a791_next_dist_build_polyfills_polyfill-nomodule.js"
   ],
   "lowPriorityFiles": [],
   "rootMainFiles": [
-    "static/chunks/[turbopack]_browser_dev_hmr-client_hmr-client_ts_7b700f7a._.js",
-    "static/chunks/219e5_next_dist_compiled_react-dom_f1186c7d._.js",
-    "static/chunks/219e5_next_dist_compiled_react-server-dom-turbopack_49f8b48b._.js",
-    "static/chunks/219e5_next_dist_compiled_next-devtools_index_7d1bc001.js",
-    "static/chunks/219e5_next_dist_compiled_eca50632._.js",
-    "static/chunks/219e5_next_dist_client_ce580fed._.js",
-    "static/chunks/219e5_next_dist_1540cb1c._.js",
-    "static/chunks/219e5_@swc_helpers_cjs_5a753500._.js",
-    "static/chunks/Downloads_dien-bien-phu-page_a0ff3932._.js",
-    "static/chunks/turbopack-Downloads_dien-bien-phu-page_5639e744._.js"
+    "static/chunks/[turbopack]_browser_dev_hmr-client_hmr-client_ts_78b67545._.js",
+    "static/chunks/9a791_next_dist_compiled_react-dom_f917df7e._.js",
+    "static/chunks/9a791_next_dist_compiled_react-server-dom-turbopack_28607b0b._.js",
+    "static/chunks/9a791_next_dist_compiled_next-devtools_index_603cc50e.js",
+    "static/chunks/9a791_next_dist_compiled_f961ea6d._.js",
+    "static/chunks/9a791_next_dist_client_8e8caef9._.js",
+    "static/chunks/9a791_next_dist_51bf4b43._.js",
+    "static/chunks/9a791_@swc_helpers_cjs_012b361c._.js",
+    "static/chunks/Downloads_VNR202-main_VNR202-main_a0ff3932._.js",
+    "static/chunks/turbopack-Downloads_VNR202-main_VNR202-main_be6ade3a._.js"
   ]
 };
 globalThis.__BUILD_MANIFEST.lowPriorityFiles = [

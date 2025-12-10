@@ -3,47 +3,69 @@
 import { motion } from "framer-motion";
 import { Card } from "@/components/ui/card";
 import { Play } from "lucide-react";
+import { useEffect, useState } from "react";
 
 const galleryItems = [
   {
     type: "image",
     title: "Chiến trường Điện Biên Phủ",
     description: "Ảnh lịch sử quý giá từ năm 1954",
-    image: "/historical-battlefield-dien-bien-phu.jpg",
+    image: "/Chien-Truong-Dien-Bi-02.jpg",
   },
   {
     type: "video",
     title: "Phim tư liệu độc quyền",
     description: "Những cảnh quay hiếm có từ cuộc chiến",
-    image: "/historical-war-footage.jpg",
+    image: "/tu-lieu.jpg",
+    videoUrl:
+      "https://vtv.vn/video/phim-tai-lieu-chien-thang-dien-bien-phu-ban-hung-ca-choi-loi-tap-1-674060.htm",
   },
   {
     type: "image",
     title: "Hiện vật lưu giữ",
     description: "Những vũ khí, quân phục từ thời kỳ chiến tranh",
-    image: "/military-artifacts-museum.jpg",
+    image: "/hien-vat.jpg",
   },
   {
     type: "image",
     title: "Bản đồ chiến lược",
     description: "Phân tích chi tiết vị trí quân đội hai bên",
-    image: "/military-strategy-map.jpg",
+    image: "/ban-do-chien-luoc.jpg",
   },
   {
     type: "video",
     title: "Phỏng vấn nhân chứng lịch sử",
     description: "Câu chuyện từ những người sống qua thời kỳ đó",
-    image: "/historical-interview-documentary.jpg",
+    image: "/phong-van.jpg",
+    videoUrl: "https://www.youtube.com/watch?v=kPpJD6UzSPU",
   },
   {
     type: "image",
     title: "Tài liệu gốc",
     description: "Những bức thư, lệnh chiến dịch được số hóa",
-    image: "/historical-documents-archive.jpg",
+    image: "/lenh.jpg",
   },
 ];
 
 export default function GallerySection() {
+  const [lightboxItem, setLightboxItem] = useState<{
+    src: string;
+    title: string;
+  } | null>(null);
+
+  const closeLightbox = () => setLightboxItem(null);
+
+  useEffect(() => {
+    if (!lightboxItem) return;
+    const onKeyDown = (event: KeyboardEvent) => {
+      if (event.key === "Escape") {
+        closeLightbox();
+      }
+    };
+    window.addEventListener("keydown", onKeyDown);
+    return () => window.removeEventListener("keydown", onKeyDown);
+  }, [lightboxItem]);
+
   const containerVariants = {
     hidden: { opacity: 0 },
     show: {
@@ -83,9 +105,36 @@ export default function GallerySection() {
           viewport={{ once: true }}
           className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6"
         >
-          {galleryItems.map((item, index) => (
-            <motion.div key={index} variants={itemVariants}>
-              <Card className="border border-amber-500/20 overflow-hidden cursor-pointer group h-full hover:border-amber-500/40 transition-all">
+          {galleryItems.map((item, index) => {
+            const isImage = item.type === "image";
+            const CardContent = (
+              <Card
+                className="border border-amber-500/20 overflow-hidden cursor-pointer group h-full hover:border-amber-500/40 transition-all"
+                role={isImage ? "button" : undefined}
+                tabIndex={isImage ? 0 : undefined}
+                onClick={
+                  isImage
+                    ? () =>
+                        setLightboxItem({
+                          src: item.image || "/placeholder.svg",
+                          title: item.title,
+                        })
+                    : undefined
+                }
+                onKeyDown={
+                  isImage
+                    ? (event) => {
+                        if (event.key === "Enter" || event.key === " ") {
+                          event.preventDefault();
+                          setLightboxItem({
+                            src: item.image || "/placeholder.svg",
+                            title: item.title,
+                          });
+                        }
+                      }
+                    : undefined
+                }
+              >
                 <div className="relative h-48 overflow-hidden bg-stone-700">
                   <img
                     src={item.image || "/placeholder.svg"}
@@ -108,10 +157,56 @@ export default function GallerySection() {
                   <p className="text-amber-50 text-sm">{item.description}</p>
                 </div>
               </Card>
-            </motion.div>
-          ))}
+            );
+            return (
+              <motion.div key={index} variants={itemVariants}>
+                {/* Kiểm tra: Nếu có videoUrl thì bọc bằng thẻ a, nếu không thì hiển thị Card bình thường */}
+                {item.videoUrl ? (
+                  <a
+                    href={item.videoUrl}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="block h-full" // Đảm bảo thẻ a bao phủ hết chiều cao
+                  >
+                    {CardContent}
+                  </a>
+                ) : (
+                  CardContent
+                )}
+              </motion.div>
+            );
+          })}
         </motion.div>
       </div>
+
+      {lightboxItem && (
+        <div
+          className="fixed inset-0 z-50 flex items-center justify-center bg-black/80 backdrop-blur-sm p-4"
+          onClick={closeLightbox}
+        >
+          <motion.div
+            initial={{ opacity: 0, scale: 0.95 }}
+            animate={{ opacity: 1, scale: 1 }}
+            transition={{ duration: 0.2 }}
+            className="relative max-w-5xl w-full max-h-[90vh] flex items-center justify-center"
+            onClick={(event) => event.stopPropagation()}
+          >
+            <button
+              type="button"
+              aria-label="Đóng ảnh phóng to"
+              className="absolute -top-3 -right-3 rounded-full bg-stone-800 text-white p-2 shadow-lg border border-amber-500/40 hover:bg-stone-700 transition-colors"
+              onClick={closeLightbox}
+            >
+              ×
+            </button>
+            <img
+              src={lightboxItem.src}
+              alt={lightboxItem.title}
+              className="max-h-[85vh] w-full object-contain rounded-lg shadow-2xl border border-amber-500/20 bg-stone-900"
+            />
+          </motion.div>
+        </div>
+      )}
     </section>
   );
 }

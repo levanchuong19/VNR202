@@ -29,6 +29,12 @@ export default function RootLayout({
       <body className={`font-sans antialiased`}>
         {children}
         <Analytics />
+
+        <script src="https://cdn.botpress.cloud/webchat/v3.5/inject.js"></script>
+        <script
+          src="https://files.bpcontent.cloud/2025/12/10/11/20251210115701-UG5EPJQ4.js"
+          defer
+        ></script>
       </body>
     </html>
   );
