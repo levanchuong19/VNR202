@@ -102,7 +102,7 @@ export default function HeroSection({ scrollY }: { scrollY: number }) {
             type="button"
             onClick={() =>
               document
-                .getElementById("dienbienphu")
+                .getElementById("vaitro")
                 ?.scrollIntoView({ behavior: "smooth" })
             }
             className="bg-amber-500 hover:bg-amber-600 text-white px-8 py-6 text-lg rounded-lg transition-all duration-300 transform hover:scale-105"
@@ -113,7 +113,7 @@ export default function HeroSection({ scrollY }: { scrollY: number }) {
             type="button"
             onClick={() =>
               document
-                .getElementById("dienbienphu")
+                .getElementById("vaitro")
                 ?.scrollIntoView({ behavior: "smooth" })
             }
             variant="outline"
@@ -130,7 +130,7 @@ export default function HeroSection({ scrollY }: { scrollY: number }) {
           transition={{ duration: 2, repeat: Number.POSITIVE_INFINITY }}
           onClick={() =>
             document
-              .getElementById("dienbienphu")
+              .getElementById("vaitro")
               ?.scrollIntoView({ behavior: "smooth" })
           }
         >
