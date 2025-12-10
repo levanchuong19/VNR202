@@ -1,0 +1,33 @@
+[00:00:00.723] Server  LOG     
+[00:00:00.724] Server  LOG        We detected TypeScript in your project and reconfigured your tsconfig.json file for you.
+[00:00:00.724] Server  LOG        The following suggested values were added to your tsconfig.json. These values can be changed to fit your project's needs:
+
+[00:00:00.724] Server  LOG        	- include was updated to add '.next/dev/types/**/*.ts'
+[00:00:00.724] Server  LOG     
+[00:00:00.724] Server  LOG        The following mandatory changes were made to your tsconfig.json:
+
+[00:00:00.725] Server  LOG        	- jsx was set to react-jsx (next.js uses the React automatic runtime)
+[00:00:00.725] Server  LOG     
+[00:00:00.863] Server  LOG      ✓ Ready in 573ms
+[00:00:14.665] Server  ERROR   C:\Users\ADMIN\Downloads\dien-bien-phu-page\.next\dev\server\chunks\ssr\Downloads_dien-bien-phu-page_1d394b89._.js: Invalid source map. Only conformant source maps can be used to find the original code. Cause: Error: sourceMapURL could not be parsed
+[00:00:14.667] Server  ERROR    ⨯ ReferenceError: window is not defined
+[00:00:14.935] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:00:15.359] Server  ERROR   C:\Users\ADMIN\Downloads\dien-bien-phu-page\.next\dev\server\chunks\ssr\Downloads_dien-bien-phu-page_1d394b89._.js: Invalid source map. Only conformant source maps can be used to find the original code. Cause: Error: sourceMapURL could not be parsed
+[00:00:15.361] Server  ERROR    ⨯ ReferenceError: window is not defined
+[00:00:16.164] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:00:17.029] Browser LOG     %c[Vercel Web Analytics]%c Debug mode is enabled by default in development. No requests will be sent to the server. color: rgb(120, 120, 120) color: inherit
+[00:00:17.029] Browser LOG     %c[Vercel Web Analytics]%c Running queued event color: rgb(120, 120, 120) color: inherit pageview {"path":"/","route":"/"}
+[00:00:17.029] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/ color: rgb(120, 120, 120) color: inherit {"dp":"/","o":"http://localhost:3000/","r":"","sdkn":"@vercel/analytics/next","sdkv":"1.6.1","sv":"0.1.3","ts":1765329273358}
+[00:00:17.395] Server  ERROR   C:\Users\ADMIN\Downloads\dien-bien-phu-page\.next\dev\server\chunks\ssr\Downloads_dien-bien-phu-page_1d394b89._.js: Invalid source map. Only conformant source maps can be used to find the original code. Cause: Error: sourceMapURL could not be parsed
+[00:00:17.396] Server  ERROR    ⨯ ReferenceError: window is not defined
+[00:00:17.560] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:00:18.394] Browser LOG     %c[Vercel Web Analytics]%c Debug mode is enabled by default in development. No requests will be sent to the server. color: rgb(120, 120, 120) color: inherit
+[00:00:18.394] Browser LOG     %c[Vercel Web Analytics]%c Running queued event color: rgb(120, 120, 120) color: inherit pageview {"path":"/","route":"/"}
+[00:00:18.394] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/ color: rgb(120, 120, 120) color: inherit {"dp":"/","o":"http://localhost:3000/","r":"","sdkn":"@vercel/analytics/next","sdkv":"1.6.1","sv":"0.1.3","ts":1765329274681}
+[00:00:24.745] Server  ERROR   C:\Users\ADMIN\Downloads\dien-bien-phu-page\.next\dev\server\chunks\ssr\Downloads_dien-bien-phu-page_1d394b89._.js: Invalid source map. Only conformant source maps can be used to find the original code. Cause: Error: sourceMapURL could not be parsed
+[00:00:24.748] Server  ERROR    ⨯ ReferenceError: window is not defined
+[00:00:25.165] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:00:26.505] Browser LOG     %c[Vercel Web Analytics]%c Debug mode is enabled by default in development. No requests will be sent to the server. color: rgb(120, 120, 120) color: inherit
+[00:00:26.506] Browser LOG     %c[Vercel Web Analytics]%c Running queued event color: rgb(120, 120, 120) color: inherit pageview {"path":"/","route":"/"}
+[00:00:26.506] Browser LOG     %c[Vercel Web Analytics]%c [pageview] http://localhost:3000/ color: rgb(120, 120, 120) color: inherit {"dp":"/","o":"http://localhost:3000/","r":"","sdkn":"@vercel/analytics/next","sdkv":"1.6.1","sv":"0.1.3","ts":1765329282625}
+[00:01:46.706] Server  LOG      ✓ Compiled in 118ms
