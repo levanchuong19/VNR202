@@ -1,20 +1,35 @@
 "use client";
 
+import { useEffect, useState } from "react";
 import { motion } from "framer-motion";
 import { Button } from "@/components/ui/button";
 
 export default function HeroSection({ scrollY }: { scrollY: number }) {
+  const [particles, setParticles] = useState<
+    { x: number; y: number; delay: number; duration: number }[]
+  >([]);
+
+  useEffect(() => {
+    const positions = Array.from({ length: 20 }, () => ({
+      x: Math.random() * window.innerWidth,
+      y: Math.random() * window.innerHeight,
+      delay: Math.random() * 2,
+      duration: 3 + Math.random() * 2,
+    }));
+    setParticles(positions);
+  }, []);
+
   return (
     <section className="relative w-full h-screen flex items-center justify-center overflow-hidden bg-gradient-to-b from-stone-900 via-amber-900 to-stone-800">
       {/* Animated background particles */}
       <div className="absolute inset-0 overflow-hidden">
-        {[...Array(20)].map((_, i) => (
+        {particles.map((p, i) => (
           <motion.div
             key={i}
             className="absolute w-2 h-2 bg-amber-500 rounded-full opacity-60"
             initial={{
-              x: Math.random() * window.innerWidth,
-              y: Math.random() * window.innerHeight,
+              x: p.x,
+              y: p.y,
               opacity: 0,
             }}
             animate={{
@@ -22,9 +37,9 @@ export default function HeroSection({ scrollY }: { scrollY: number }) {
               opacity: [0, 0.6, 0],
             }}
             transition={{
-              duration: 3 + Math.random() * 2,
+              duration: p.duration,
               repeat: Number.POSITIVE_INFINITY,
-              delay: Math.random() * 2,
+              delay: p.delay,
             }}
           />
         ))}
@@ -87,7 +102,7 @@ export default function HeroSection({ scrollY }: { scrollY: number }) {
             type="button"
             onClick={() =>
               document
-                .getElementById("vaitro")
+                .getElementById("dienbienphu")
                 ?.scrollIntoView({ behavior: "smooth" })
             }
             className="bg-amber-500 hover:bg-amber-600 text-white px-8 py-6 text-lg rounded-lg transition-all duration-300 transform hover:scale-105"
@@ -98,7 +113,7 @@ export default function HeroSection({ scrollY }: { scrollY: number }) {
             type="button"
             onClick={() =>
               document
-                .getElementById("vaitro")
+                .getElementById("dienbienphu")
                 ?.scrollIntoView({ behavior: "smooth" })
             }
             variant="outline"
@@ -115,7 +130,7 @@ export default function HeroSection({ scrollY }: { scrollY: number }) {
           transition={{ duration: 2, repeat: Number.POSITIVE_INFINITY }}
           onClick={() =>
             document
-              .getElementById("vaitro")
+              .getElementById("dienbienphu")
               ?.scrollIntoView({ behavior: "smooth" })
           }
         >
