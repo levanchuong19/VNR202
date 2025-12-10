@@ -37,7 +37,7 @@ export default function CourseOverview() {
           className="text-center mb-12"
         >
           <h2 className="text-4xl md:text-5xl font-bold text-white mb-4">
-            Phần 1: Vai Trò Lãnh Đạo Của Đảng
+            Vai Trò Lãnh Đạo Của Đảng
           </h2>
           <p className="text-xl text-amber-100 max-w-2xl mx-auto">
             Vai trò lãnh đạo của Đảng Cộng sản Việt Nam

@@ -69,7 +69,7 @@ export function UnderstandingSection() {
         >
           <h2 className="text-4xl md:text-5xl font-bold mb-4">
             <span className="bg-linear-to-r from-(--color-accent) via-amber-400 to-(--color-accent-light) bg-clip-text text-amber-400 font-bold">
-              Phần 1: Bối Cảnh Lịch Sử
+              Bối Cảnh Lịch Sử
             </span>
           </h2>
           <p className="text-[--color-text-muted] text-lg">
