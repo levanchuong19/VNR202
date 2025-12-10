@@ -1,12 +1,13 @@
-"use client"
+"use client";
 
-import { motion } from "framer-motion"
+import { motion } from "framer-motion";
 
 const timelineEvents = [
   {
     year: "1945",
     title: "Nổi dậy cách mạng tháng Tám",
-    description: "Việt Minh tổng khởi nghĩa, thành lập Việt Nam Dân chủ Cộng hòa",
+    description:
+      "Việt Minh tổng khởi nghĩa, thành lập Việt Nam Dân chủ Cộng hòa",
   },
   {
     year: "1950-1953",
@@ -23,11 +24,11 @@ const timelineEvents = [
     title: "Chiến dịch Điện Biên Phủ",
     description: "Những trận chiến quyết định, thắng lợi lịch sử của Việt Minh",
   },
-]
+];
 
 export default function TimelineSection() {
   return (
-    <section className="py-20 px-4 md:px-8 bg-stone-800">
+    <section id="thoigian" className="py-20 px-4 md:px-8 bg-stone-800">
       <div className="max-w-6xl mx-auto">
         <motion.h2
           initial={{ opacity: 0, y: 20 }}
@@ -51,12 +52,22 @@ export default function TimelineSection() {
                 whileInView={{ opacity: 1, x: 0 }}
                 transition={{ duration: 0.6, delay: index * 0.1 }}
                 viewport={{ once: true }}
-                className={`flex items-center ${index % 2 === 0 ? "flex-row" : "flex-row-reverse"}`}
+                className={`flex items-center ${
+                  index % 2 === 0 ? "flex-row" : "flex-row-reverse"
+                }`}
               >
-                <div className={`w-1/2 ${index % 2 === 0 ? "pr-12 text-right" : "pl-12"}`}>
+                <div
+                  className={`w-1/2 ${
+                    index % 2 === 0 ? "pr-12 text-right" : "pl-12"
+                  }`}
+                >
                   <div className="bg-amber-600/10 border border-amber-500/30 rounded-lg p-6 hover:bg-amber-600/20 transition-all duration-300">
-                    <h3 className="text-2xl font-bold text-amber-400 mb-2">{event.year}</h3>
-                    <h4 className="text-xl font-semibold text-white mb-3">{event.title}</h4>
+                    <h3 className="text-2xl font-bold text-amber-400 mb-2">
+                      {event.year}
+                    </h3>
+                    <h4 className="text-xl font-semibold text-white mb-3">
+                      {event.title}
+                    </h4>
                     <p className="text-amber-50">{event.description}</p>
                   </div>
                 </div>
@@ -79,5 +90,5 @@ export default function TimelineSection() {
         </div>
       </div>
     </section>
-  )
+  );
 }

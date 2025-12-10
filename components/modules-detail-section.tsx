@@ -1,76 +1,80 @@
-"use client"
+"use client";
 
-import { motion } from "framer-motion"
-import { Card } from "@/components/ui/card"
-import { ChevronDown } from "lucide-react"
-import { useState } from "react"
+import { motion } from "framer-motion";
+import { Card } from "@/components/ui/card";
+import { ChevronDown } from "lucide-react";
+import { useState } from "react";
 
 const modulesDetail = [
   {
     id: 1,
-    title: "Bối cảnh lịch sử (1945-1953)",
+    title: "Bối cảnh lịch sử (1945–1953)",
     lessons: [
-      "Tổng khởi nghĩa tháng Tám 1945",
-      "Sự hình thành của Việt Minh",
-      "Xung đột Pháp - Việt Minh ban đầu",
-      "Chiến thuật di động và kiên cường",
+      "Cách mạng Tháng Tám năm 1945",
+      "Thành lập nước Việt Nam Dân chủ Cộng hòa",
+      "Thực dân Pháp quay lại xâm lược Việt Nam",
+      "Cuộc kháng chiến toàn quốc bùng nổ (1946)",
     ],
   },
   {
     id: 2,
-    title: "Chiến lược quân sự Điện Biên Phủ",
+    title: "Chiến lược quân sự tại Điện Biên Phủ",
     lessons: [
-      "Lựa chọn địa điểm chiến dịch",
-      "Tập hợp và vận chuyển quân lực",
-      "Phân tích lực lượng hai bên",
-      "Các giai đoạn chiến dịch quyết định",
-      "Tuyệt chiủ chiến pháp pháp quân",
+      "Lựa chọn Điện Biên Phủ làm điểm quyết chiến",
+      "Chuẩn bị lực lượng và xây dựng trận địa",
+      "So sánh tương quan lực lượng hai bên",
+      "Phương châm: đánh chắc – tiến chắc",
+      "Ba đợt tấn công chiến dịch lịch sử",
     ],
   },
   {
     id: 3,
-    title: "Các tướng lĩnh tài ba",
+    title: "Những người lãnh đạo tiêu biểu",
     lessons: [
-      "Võ Nguyên Giáp - Tuyệt chiủ chiến lược",
-      "Lê Duẩn - Người cộng sự đắc lực",
-      "Phan Bội Châu - Nhân vật lịch sử",
-      "Các trung tá, thiếu tá nổi bật",
+      "Đại tướng Võ Nguyên Giáp – Tổng chỉ huy chiến dịch",
+      "Chủ tịch Hồ Chí Minh – Người định hướng chiến lược",
+      "Các tướng lĩnh và chỉ huy chủ chốt",
+      "Tinh thần chiến đấu của bộ đội và nhân dân",
     ],
   },
   {
     id: 4,
-    title: "Ảnh hưởng toàn cầu",
+    title: "Tầm ảnh hưởng quốc tế",
     lessons: [
-      "Tác động đến chính trị Đông Nam Á",
-      "Ảnh hưởng đến phong trào độc lập thế giới",
-      "Phản ứng quốc tế đến chiến thắng",
-      "Bài học cho cuộc chiến tranh hiện đại",
+      "Kết thúc ách thống trị của Pháp tại Đông Dương",
+      "Thúc đẩy phong trào giải phóng dân tộc trên thế giới",
+      "Tác động tới Hội nghị Giơ-ne-vơ năm 1954",
+      "Nâng cao vị thế của Việt Nam trên trường quốc tế",
     ],
   },
   {
     id: 5,
-    title: "Tài liệu sơ cấp & Hiện vật",
+    title: "Tư liệu lịch sử tiêu biểu",
     lessons: [
-      "Sắc lệnh chiến dịch gốc",
-      "Thư từ của các lãnh đạo",
-      "Ảnh hiếm có từ chiến trường",
-      "Hiện vật lưu giữ từ cuộc chiến",
-      "Nhật ký chiến trường của lính",
-      "Phim tư liệu độc quyền",
+      "Hình ảnh tư liệu về chiến dịch Điện Biên Phủ",
+      "Lệnh tác chiến và chỉ thị chiến trường",
+      "Thư từ và tài liệu của các lãnh đạo",
+      "Hiện vật lịch sử được lưu giữ",
+      "Nhật ký và hồi ký của chiến sĩ",
+      "Phim tư liệu về chiến dịch",
     ],
   },
   {
     id: 6,
-    title: "Kết luận & Di sản",
-    lessons: ["Bài học rút ra từ chiến thắng", "Ảnh hưởng đến phát triển đất nước", "Những địa điểm lịch sử hiện nay"],
+    title: "Kết luận và bài học lịch sử",
+    lessons: [
+      "Bài học về sự lãnh đạo đúng đắn của Đảng",
+      "Sức mạnh của khối đại đoàn kết dân tộc",
+      "Tinh thần tự lực, tự cường và ý chí độc lập",
+    ],
   },
-]
+];
 
 export default function ModulesDetailSection() {
-  const [expandedId, setExpandedId] = useState<number | null>(null)
+  const [expandedId, setExpandedId] = useState<number | null>(null);
 
   return (
-    <section className="py-20 px-4 md:px-8 bg-stone-800">
+    <section id="baihoc" className="py-20 px-4 md:px-8 bg-stone-900 ">
       <div className="max-w-4xl mx-auto">
         <motion.div
           initial={{ opacity: 0, y: 20 }}
@@ -79,8 +83,12 @@ export default function ModulesDetailSection() {
           viewport={{ once: true }}
           className="text-center mb-16"
         >
-          <h2 className="text-4xl md:text-5xl font-bold text-white mb-4">Chi tiết từng mô-đun</h2>
-          <p className="text-xl text-amber-100">Nhấp vào để xem danh sách bài học chi tiết của mỗi mô-đun</p>
+          <h2 className="text-4xl md:text-5xl font-bold text-white mb-4">
+            Bài Học Kinh Nghiệm
+          </h2>
+          <p className="text-xl text-amber-100">
+            Bài học rút ra từ giai đoạn 1945–1954
+          </p>
         </motion.div>
 
         <div className="space-y-4">
@@ -94,7 +102,9 @@ export default function ModulesDetailSection() {
             >
               <Card
                 className="border border-amber-500/20 hover:border-amber-500/40 transition-all cursor-pointer overflow-hidden"
-                onClick={() => setExpandedId(expandedId === module.id ? null : module.id)}
+                onClick={() =>
+                  setExpandedId(expandedId === module.id ? null : module.id)
+                }
               >
                 <div className="bg-gradient-to-r from-amber-600/10 to-amber-700/5 hover:from-amber-600/20 hover:to-amber-700/10 p-6 transition-all flex items-center justify-between">
                   <div className="flex items-center gap-4">
@@ -102,11 +112,18 @@ export default function ModulesDetailSection() {
                       {module.id}
                     </div>
                     <div>
-                      <h3 className="text-xl font-bold text-white">{module.title}</h3>
-                      <p className="text-amber-300 text-sm">{module.lessons.length} bài học</p>
+                      <h3 className="text-xl font-bold text-white">
+                        {module.title}
+                      </h3>
+                      <p className="text-amber-300 text-sm">
+                        {module.lessons.length} bài học
+                      </p>
                     </div>
                   </div>
-                  <motion.div animate={{ rotate: expandedId === module.id ? 180 : 0 }} transition={{ duration: 0.3 }}>
+                  <motion.div
+                    animate={{ rotate: expandedId === module.id ? 180 : 0 }}
+                    transition={{ duration: 0.3 }}
+                  >
                     <ChevronDown className="w-6 h-6 text-amber-400" />
                   </motion.div>
                 </div>
@@ -130,7 +147,9 @@ export default function ModulesDetailSection() {
                           transition={{ delay: lessonIndex * 0.05 }}
                           className="flex items-start gap-3"
                         >
-                          <span className="text-amber-400 font-bold mt-1">▸</span>
+                          <span className="text-amber-400 font-bold mt-1">
+                            ▸
+                          </span>
                           <span className="text-amber-50">{lesson}</span>
                         </motion.li>
                       ))}
@@ -143,5 +162,5 @@ export default function ModulesDetailSection() {
         </div>
       </div>
     </section>
-  )
+  );
 }

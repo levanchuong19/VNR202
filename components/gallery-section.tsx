@@ -1,8 +1,8 @@
-"use client"
+"use client";
 
-import { motion } from "framer-motion"
-import { Card } from "@/components/ui/card"
-import { Play } from "lucide-react"
+import { motion } from "framer-motion";
+import { Card } from "@/components/ui/card";
+import { Play } from "lucide-react";
 
 const galleryItems = [
   {
@@ -41,7 +41,7 @@ const galleryItems = [
     description: "Những bức thư, lệnh chiến dịch được số hóa",
     image: "/historical-documents-archive.jpg",
   },
-]
+];
 
 export default function GallerySection() {
   const containerVariants = {
@@ -50,15 +50,15 @@ export default function GallerySection() {
       opacity: 1,
       transition: { staggerChildren: 0.08 },
     },
-  }
+  };
 
   const itemVariants = {
     hidden: { opacity: 0, scale: 0.9 },
     show: { opacity: 1, scale: 1, transition: { duration: 0.5 } },
-  }
+  };
 
   return (
-    <section className="py-20 px-4 md:px-8 bg-stone-800">
+    <section id="thuvien" className="py-20 px-4 md:px-8 bg-stone-800">
       <div className="max-w-6xl mx-auto">
         <motion.div
           initial={{ opacity: 0, y: 20 }}
@@ -67,9 +67,12 @@ export default function GallerySection() {
           viewport={{ once: true }}
           className="text-center mb-16"
         >
-          <h2 className="text-4xl md:text-5xl font-bold text-white mb-4">Thư viện Hình ảnh & Video</h2>
+          <h2 className="text-4xl md:text-5xl font-bold text-white mb-4">
+            Thư viện Hình ảnh & Video
+          </h2>
           <p className="text-xl text-amber-100 max-w-2xl mx-auto">
-            Khám phá hình ảnh lịch sử, video tư liệu, và hiện vật quý giá từ chiến dịch
+            Khám phá hình ảnh lịch sử, video tư liệu, và hiện vật quý giá từ
+            chiến dịch
           </p>
         </motion.div>
 
@@ -99,7 +102,9 @@ export default function GallerySection() {
                   )}
                 </div>
                 <div className="p-4 bg-stone-700/50">
-                  <h3 className="text-lg font-bold text-white mb-2">{item.title}</h3>
+                  <h3 className="text-lg font-bold text-white mb-2">
+                    {item.title}
+                  </h3>
                   <p className="text-amber-50 text-sm">{item.description}</p>
                 </div>
               </Card>
@@ -108,5 +113,5 @@ export default function GallerySection() {
         </motion.div>
       </div>
     </section>
-  )
+  );
 }

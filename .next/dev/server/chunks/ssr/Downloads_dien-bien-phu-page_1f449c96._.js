@@ -132,11 +132,10 @@ function HeroSection({ scrollY }) {
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Downloads$2f$dien$2d$bien$2d$phu$2d$page$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
                 className: "absolute inset-0",
                 style: {
-                    backgroundImage: "url(/placeholder.svg?height=1080&width=1920&query=Điện+Biên+Phủ+mountains+landscape)",
+                    backgroundImage: "url('https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjJqRS8TgNx0wZtz4Z8V1n8RbGorMUZ2ei80QsheZOvGlpDaqqNMld_ncPExWM300Ubnwis8l2fIQldtVoUSTQCNVWypauIkOWs27MTEkRxoZsbB1-8nkG9n4asyj6X3eOHkey7uWLJvMk/s640/Chien-Tranh-Viet-Nam-War-2.jpg')",
                     backgroundSize: "cover",
-                    backgroundPosition: "center",
-                    opacity: 0.3,
-                    transform: `translateY(${scrollY * 0.5}px)`
+                    backgroundPosition: "top",
+                    opacity: 0.3
                 }
             }, void 0, false, {
                 fileName: "[project]/Downloads/dien-bien-phu-page/components/hero-section.tsx",
@@ -166,7 +165,7 @@ function HeroSection({ scrollY }) {
                                     children: "Chiến Thắng"
                                 }, void 0, false, {
                                     fileName: "[project]/Downloads/dien-bien-phu-page/components/hero-section.tsx",
-                                    lineNumber: 49,
+                                    lineNumber: 54,
                                     columnNumber: 13
                                 }, this),
                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Downloads$2f$dien$2d$bien$2d$phu$2d$page$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$Downloads$2f$dien$2d$bien$2d$phu$2d$page$2f$node_modules$2f$framer$2d$motion$2f$dist$2f$es$2f$render$2f$components$2f$motion$2f$proxy$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["motion"].span, {
@@ -186,18 +185,18 @@ function HeroSection({ scrollY }) {
                                     children: "Điện Biên Phủ"
                                 }, void 0, false, {
                                     fileName: "[project]/Downloads/dien-bien-phu-page/components/hero-section.tsx",
-                                    lineNumber: 50,
+                                    lineNumber: 55,
                                     columnNumber: 13
                                 }, this)
                             ]
                         }, void 0, true, {
                             fileName: "[project]/Downloads/dien-bien-phu-page/components/hero-section.tsx",
-                            lineNumber: 48,
+                            lineNumber: 53,
                             columnNumber: 11
                         }, this)
                     }, void 0, false, {
                         fileName: "[project]/Downloads/dien-bien-phu-page/components/hero-section.tsx",
-                        lineNumber: 47,
+                        lineNumber: 48,
                         columnNumber: 9
                     }, this),
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Downloads$2f$dien$2d$bien$2d$phu$2d$page$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$Downloads$2f$dien$2d$bien$2d$phu$2d$page$2f$node_modules$2f$framer$2d$motion$2f$dist$2f$es$2f$render$2f$components$2f$motion$2f$proxy$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["motion"].p, {
@@ -212,37 +211,10 @@ function HeroSection({ scrollY }) {
                             delay: 0.5,
                             duration: 0.8
                         },
-                        children: "Tìm hiểu cuộc chiến lịch sử (1945-1954) - Một chiến công vĩ đại của dân tộc Việt Nam"
+                        children: "Tìm hiểu giai đoạn lịch sử (1945-1954) - Cuộc chiến công vĩ đại của dân tộc Việt Nam"
                     }, void 0, false, {
                         fileName: "[project]/Downloads/dien-bien-phu-page/components/hero-section.tsx",
-                        lineNumber: 62,
-                        columnNumber: 9
-                    }, this),
-                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Downloads$2f$dien$2d$bien$2d$phu$2d$page$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$Downloads$2f$dien$2d$bien$2d$phu$2d$page$2f$node_modules$2f$framer$2d$motion$2f$dist$2f$es$2f$render$2f$components$2f$motion$2f$proxy$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["motion"].div, {
-                        className: "mb-8",
-                        initial: {
-                            opacity: 0,
-                            scale: 0.5
-                        },
-                        animate: {
-                            opacity: 1,
-                            scale: 1
-                        },
-                        transition: {
-                            delay: 0.7,
-                            duration: 0.6
-                        },
-                        children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Downloads$2f$dien$2d$bien$2d$phu$2d$page$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                            className: "inline-block bg-amber-500/20 border border-amber-400 rounded-full px-6 py-2 text-amber-300 font-semibold",
-                            children: "Khóa học lịch sử VNR"
-                        }, void 0, false, {
-                            fileName: "[project]/Downloads/dien-bien-phu-page/components/hero-section.tsx",
-                            lineNumber: 78,
-                            columnNumber: 11
-                        }, this)
-                    }, void 0, false, {
-                        fileName: "[project]/Downloads/dien-bien-phu-page/components/hero-section.tsx",
-                        lineNumber: 72,
+                        lineNumber: 67,
                         columnNumber: 9
                     }, this),
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Downloads$2f$dien$2d$bien$2d$phu$2d$page$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$Downloads$2f$dien$2d$bien$2d$phu$2d$page$2f$node_modules$2f$framer$2d$motion$2f$dist$2f$es$2f$render$2f$components$2f$motion$2f$proxy$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["motion"].div, {
@@ -262,10 +234,10 @@ function HeroSection({ scrollY }) {
                         children: [
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Downloads$2f$dien$2d$bien$2d$phu$2d$page$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$Downloads$2f$dien$2d$bien$2d$phu$2d$page$2f$components$2f$ui$2f$button$2e$tsx__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["Button"], {
                                 className: "bg-amber-500 hover:bg-amber-600 text-white px-8 py-6 text-lg rounded-lg transition-all duration-300 transform hover:scale-105",
-                                children: "Bắt đầu học ngay"
+                                children: "Khám phá ngay"
                             }, void 0, false, {
                                 fileName: "[project]/Downloads/dien-bien-phu-page/components/hero-section.tsx",
-                                lineNumber: 90,
+                                lineNumber: 84,
                                 columnNumber: 11
                             }, this),
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Downloads$2f$dien$2d$bien$2d$phu$2d$page$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$Downloads$2f$dien$2d$bien$2d$phu$2d$page$2f$components$2f$ui$2f$button$2e$tsx__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["Button"], {
@@ -274,17 +246,17 @@ function HeroSection({ scrollY }) {
                                 children: "Tìm hiểu thêm"
                             }, void 0, false, {
                                 fileName: "[project]/Downloads/dien-bien-phu-page/components/hero-section.tsx",
-                                lineNumber: 93,
+                                lineNumber: 87,
                                 columnNumber: 11
                             }, this)
                         ]
                     }, void 0, true, {
                         fileName: "[project]/Downloads/dien-bien-phu-page/components/hero-section.tsx",
-                        lineNumber: 84,
+                        lineNumber: 78,
                         columnNumber: 9
                     }, this),
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Downloads$2f$dien$2d$bien$2d$phu$2d$page$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$Downloads$2f$dien$2d$bien$2d$phu$2d$page$2f$node_modules$2f$framer$2d$motion$2f$dist$2f$es$2f$render$2f$components$2f$motion$2f$proxy$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["motion"].div, {
-                        className: "absolute bottom-8 left-1/2 transform -translate-x-1/2",
+                        className: "absolute top-110 left-1/2 transform -translate-x-1/2 cursor-pointer",
                         animate: {
                             y: [
                                 0,
@@ -304,7 +276,7 @@ function HeroSection({ scrollY }) {
                                     children: "Cuộn xuống"
                                 }, void 0, false, {
                                     fileName: "[project]/Downloads/dien-bien-phu-page/components/hero-section.tsx",
-                                    lineNumber: 108,
+                                    lineNumber: 102,
                                     columnNumber: 13
                                 }, this),
                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Downloads$2f$dien$2d$bien$2d$phu$2d$page$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("svg", {
@@ -319,29 +291,29 @@ function HeroSection({ scrollY }) {
                                         d: "M19 14l-7 7m0 0l-7-7m7 7V3"
                                     }, void 0, false, {
                                         fileName: "[project]/Downloads/dien-bien-phu-page/components/hero-section.tsx",
-                                        lineNumber: 110,
+                                        lineNumber: 111,
                                         columnNumber: 15
                                     }, this)
                                 }, void 0, false, {
                                     fileName: "[project]/Downloads/dien-bien-phu-page/components/hero-section.tsx",
-                                    lineNumber: 109,
+                                    lineNumber: 105,
                                     columnNumber: 13
                                 }, this)
                             ]
                         }, void 0, true, {
                             fileName: "[project]/Downloads/dien-bien-phu-page/components/hero-section.tsx",
-                            lineNumber: 107,
+                            lineNumber: 101,
                             columnNumber: 11
                         }, this)
                     }, void 0, false, {
                         fileName: "[project]/Downloads/dien-bien-phu-page/components/hero-section.tsx",
-                        lineNumber: 102,
+                        lineNumber: 96,
                         columnNumber: 9
                     }, this)
                 ]
             }, void 0, true, {
                 fileName: "[project]/Downloads/dien-bien-phu-page/components/hero-section.tsx",
-                lineNumber: 45,
+                lineNumber: 46,
                 columnNumber: 7
             }, this)
         ]
